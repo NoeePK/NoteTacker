@@ -9,7 +9,6 @@ const createNewNote = (extrait, space) => {
 
     const newBtnSpace = document.createElement('li')
     newBtnSpace.classList.add('buttonViewMore')
-    newBtnSpace.innerText = space
     newNote.appendChild(newBtnSpace)
 
 
@@ -23,24 +22,4 @@ const handleSubmit = (event) => {
     document.querySelector('#notes').appendChild(newNote)
 
     resetForm()
-}
-
-const createNewButton = () => {
-    
-    const viewMoreBtn = document.createElement('button')
-    viewMoreBtn.classList.add('viewMore')
-    viewMoreBtn.innerText = button
-    viewMoreBtn.type = "button"
-    viewMoreBtn.name = 'viewMore'
-    newBtnSpace.appendChild(viewMoreBtn)
-
-    return viewMoreBtn
-}
-
-function viewMoreBtn(event) {
-    event.preventDefault()
-    document.querySelectorAll('buttonViewMore').appendChild(viewMoreBtn)
-
-    resetForm()
-
 }

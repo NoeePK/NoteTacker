@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="compiled/index.css">
     <title>Document</title>
 </head>
@@ -13,10 +16,9 @@
     <h1>NoteTacker</h1>
     <section>
         <form method="post" onsubmit="handleSubmit(event)">
-            <label for="newNote">Ajouter une note</label>
-            <input type="text" id="newNote" name="newNote">
+            <textarea id="newNote" name="newNote" rows="4" cols="50"></textarea>
 
-            <button type="submit" id="submitNewNote" onclick="viewMoreBtn(event)">+</button>
+            <button type="submit" id="submitNewNote">+</button>
         </form>
 
     </section>
@@ -27,7 +29,7 @@
                 <li class="extrait">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas quaerat eligendi,
                     repellat, corrupti quia sunt libero labore, enim minus reprehenderit nulla praesentium facere
                     sapiente repudiandae doloribus dolorum fugit deleniti accusantium!</li>
-                <li class="buttonViewMore"><button type="button" name="viewMore" class="viewMore">Voir plus</button></li>
+                <li class="buttonViewMore"></li>
             </ul>
         </div>
     </section>
