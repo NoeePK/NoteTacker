@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,32 @@
     <link rel="stylesheet" href="compiled/index.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <h1>NoteTacker</h1>
+    <section>
+        <form method="post" onsubmit="handleSubmit(event)">
+            <label for="newNote">Ajouter une note</label>
+            <input type="text" id="newNote" name="newNote">
+
+            <button type="submit" id="submitNewNote" onclick="viewMoreBtn(event)">+</button>
+        </form>
+
+    </section>
+    <section>
+        <h2>Notes</h2>
+        <div id="notes">
+            <ul class="note">
+                <li class="extrait">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas quaerat eligendi,
+                    repellat, corrupti quia sunt libero labore, enim minus reprehenderit nulla praesentium facere
+                    sapiente repudiandae doloribus dolorum fugit deleniti accusantium!</li>
+                <li class="buttonViewMore"><button type="button" name="viewMore" class="viewMore">Voir plus</button></li>
+            </ul>
+        </div>
+    </section>
 
 
     <script src="index.js"></script>
 </body>
+
 </html>
