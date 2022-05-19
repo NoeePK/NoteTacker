@@ -1,4 +1,4 @@
-const createNewNote = (extrait, space) => {
+const createNewNote = (extrait) => {
     const newNote = document.createElement('ul')
     newNote.classList.add('note')
 
@@ -6,11 +6,12 @@ const createNewNote = (extrait, space) => {
     newExtrait.classList.add('extrait')
     newExtrait.innerText = extrait
     newNote.appendChild(newExtrait)
-
+/* Si remis, remettre dans les para entre parenthèses:
     const newBtnSpace = document.createElement('li')
     newBtnSpace.classList.add('buttonViewMore')
+    newBtnSpace.innerText = space
     newNote.appendChild(newBtnSpace)
-
+*/
 
     return newNote
 }

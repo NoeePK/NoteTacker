@@ -5,8 +5,8 @@ html {
 }
 
 body {
-    width: 80%;
-    margin-left: 10%;
+    width: 60%;
+    margin-left: 20%;
     padding: 1em 2em 1em 2em;
     background-color: rgba(255, 255, 255, 0.87);
 }
@@ -38,7 +38,7 @@ textarea {
     }
 }
 
-#submitNewNote, .buttonViewMore {
+#submitNewNote{
     cursor: pointer;
     border: 2px solid white;
     background-color: #B86E28;
@@ -53,30 +53,54 @@ textarea {
     transition: all 350ms ease-in-out;
 
     &:hover {
-        transform: scale(1.3);
-        opacity: 1;
+        transform: scale(1.2);
+        opacity: .8;
         
     }
 }
 
+
+
 .note {
     list-style-type: none;
+    margin-left: 10%;
+  
     
 }
 
 .extrait {
     border: 1px solid black;
-    background-color: white;
-    padding: 1em;
+    background-color: #b86e2870;
+    opacity: 0.8;
+    padding: 1em 2em;
     text-align: justify;
-    width: 100px;
-    height: 100px;
-    overflow: hidden; 
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+    cursor: zoom-in;
+    transition: all 350ms ease-in-out;
+    &:hover {
+        width:fit-content;
+        opacity: 1;
+        background-color: white;
+        
+    }
+
       
+}
+
+.buttonViewMore {
+    position: relative;
 }
 
 
 
 
 
-
+footer {
+    margin-top: 25%;
+    text-align: end;
+    color: #B86E28;
+    font-weight: bold;
+    font-family: 'Sigmar One', cursive;
+}
