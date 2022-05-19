@@ -16,7 +16,7 @@
     <h1>NoteTacker</h1>
     <section>
         <form method="post" onsubmit="handleSubmit(event)">
-            <textarea id="newNote" name="newNote" rows="4" cols="50"></textarea>
+            <textarea id="newNote" name="newNote" minlength="30" rows="4" cols="50" placeholder="" required></textarea>
 
             <button type="submit" id="submitNewNote">+</button>
         </form>
@@ -39,9 +39,7 @@
             </ul>
         </div>
     </section>
-<footer>
-   <p>NPK 2022</p>
-</footer>
+
 
     <script src="index.js"></script>
 </body>

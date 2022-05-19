@@ -74,11 +74,12 @@ textarea {
     opacity: 0.8;
     padding: 1em 2em;
     text-align: justify;
+    
     width: 200px;
     height: 50px;
     overflow: hidden;
     cursor: zoom-in;
-    transition: all 350ms ease-in-out;
+    transition: all 1050ms ease-in-out;
     &:hover {
         width:fit-content;
         opacity: 1;
@@ -95,12 +96,3 @@ textarea {
 
 
 
-
-
-footer {
-    margin-top: 25%;
-    text-align: end;
-    color: #B86E28;
-    font-weight: bold;
-    font-family: 'Sigmar One', cursive;
-}
